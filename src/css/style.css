@@ -1,0 +1,67 @@
+@import "header.css";
+@import "main.css";
+@import "achievement.css";
+
+:root {
+    --redCol: #DB3138;
+    --wCol: #fff;
+    --fontF: 'ReformaGroteskBoldC', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1E1E1E;
+}
+a {
+    color: var(--wCol);
+    text-decoration: none;
+}
+.container {
+    max-width: 1256px;
+    width: 100%;
+    margin: 0 auto;
+}
+.cubs {
+    display: flex;
+    width: 146.36px;
+    height: 14.14px;
+    margin: 0 auto;
+    justify-content: space-between;
+    column-gap: 29.93px;
+}
+.cubs .cub {
+    width: 10px;
+    height: 10px;
+    background-color: var(--redCol);
+    transform: rotate(45deg);
+}
+.btn {
+    padding: 15px 25px;
+    font-family: var(--fontF);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 100;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 68%;
+    height: 100%;
+    background-color: var(--redCol);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s linear;
+}
+.btn:hover::before {
+    width: 100%;
+}

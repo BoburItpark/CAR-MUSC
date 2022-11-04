@@ -1,0 +1,48 @@
+.header {
+    margin-top: 42px;
+    width: 100%;
+    position: absolute;
+}
+.header .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .header__nav .header__nav-menu {
+    display: flex;
+    column-gap: 40px;
+}
+.header .header__nav-menu a {
+    font-family: 'ReformaGroteskMediumC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.header .header__nav-menu .header__nav-btn {
+    width: 40px;
+    height: 3px;
+    background-color: var(--redCol);
+    position: relative;
+    right: 10px;
+}
+.header .header__nav-menu .header__nav-btn::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: var(--redCol);
+    top: -8px;
+    right: -10px;
+}
+.header .header__nav-menu .header__nav-btn::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: var(--redCol);
+    top: 8px;
+    right: -10px;
+}
